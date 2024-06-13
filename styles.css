@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 100px 0 200px 0;
+}
+
+
+.recipe-card {
+    width: 450px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.img-container {
+    margin: auto;
+    padding: 20px 20px 10px 20px;
+}
+
+img {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.recipe {
+    padding: 10px 20px 20px 20px;
+}
+
+h1 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+#first-p {
+    font-size: 0.7em;
+}
+
+.prep-time {
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#prep-h2 {
+    color: hsl(332, 51%, 32%);
+    padding: 20px 0 0 5%;
+    font-size: medium;
+}
+
+.prep-time ul {
+    list-style-position: inside; 
+    padding: 10px 0 20px 10%;
+}
+
+.list {
+    color: black;
+    font-weight: 600;
+}
+
+#ingredients, #instructions {
+    font-family: 'Young Serif';
+    color: hsl(332, 51%, 32%);
+    font-weight: 400;
+}
+
+#ingredients-ul, #instructions-ol {
+    list-style-position: inside;
+    padding: 15px 0 15px 2%;
+}
+
+footer {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

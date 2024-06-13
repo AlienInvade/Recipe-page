@@ -65,8 +65,9 @@ h1 {
 }
 
 .prep-time ul {
-    list-style-position: inside; 
+    list-style: disc inside; 
     padding: 10px 0 20px 10%;
+    font-style: hsl(332, 51%, 32%);
 }
 
 .list {
@@ -74,15 +75,21 @@ h1 {
     font-weight: 600;
 }
 
-#ingredients, #instructions {
+h2 {
     font-family: 'Young Serif';
     color: hsl(332, 51%, 32%);
     font-weight: 400;
 }
 
+p {
+    display: inline-block;
+}
+
 #ingredients-ul, #instructions-ol {
     list-style-position: inside;
     padding: 15px 0 15px 2%;
+    font-family: 'Outfit';
+    font-weight: 400;
 }
 
 footer {

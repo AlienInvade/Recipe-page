@@ -8,22 +8,23 @@ body {
     font-family: 'Outfit';
     font-size: 16px;
     font-weight: 400;
+    color: hsl(30, 10%, 34%);
 }
 
-main {
+.container {
     position: absolute;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 100px 0 200px 0;
 }
 
 
 .recipe-card {
-    width: 450px;
-    height: auto;
+    width: 520px;
+    height: 800;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
+    margin: auto;
 }
 
 .img-container {
@@ -45,10 +46,11 @@ h1 {
     font-family: 'Young Serif';
     font-weight: 400;
     margin-bottom: 10px;
+    color: black;
 }
 
 #first-p {
-    font-size: 0.7em;
+    font-size: 0.73rem;
 }
 
 .prep-time {
@@ -70,33 +72,58 @@ h1 {
     font-style: hsl(332, 51%, 32%);
 }
 
+ul li, ol li {
+    margin: 0.5rem;
+    font-size: 0.73rem;
+}
+
+ul li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: 0.9rem;
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
 .list {
-    color: black;
     font-weight: 600;
 }
 
 h2 {
     font-family: 'Young Serif';
-    color: hsl(332, 51%, 32%);
+    color: hsl(14, 45%, 36%);
     font-weight: 400;
+    margin-top: 15px;
 }
 
-p {
-    display: inline-block;
-}
 
 #ingredients-ul, #instructions-ol {
     list-style-position: inside;
     padding: 15px 0 15px 2%;
     font-family: 'Outfit';
-    font-weight: 400;
 }
 
-footer {
+
+.nutrients {
+    margin: 15px 0;
+}
+
+.nutrients p {
+    display: inline-block;
+    margin-left: 1.5rem;  
+}
+
+.nutrition-values {
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 15.5rem;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+hr {
+    color: hsl(30, 18%, 87%);
 }
 
 .attribution { 
@@ -107,3 +134,11 @@ footer {
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
+
+ footer {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   transform: translate(-50%, 700px);
+   margin-bottom: 10px;
+}

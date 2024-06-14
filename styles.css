@@ -18,10 +18,9 @@ body {
     margin: 50px 0;
 }
 
-
 .recipe-card {
     width: 520px;
-    height: 1320px;
+    height: 1340px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
 }
@@ -48,8 +47,12 @@ h1 {
     color: black;
 }
 
-#first-p {
+#first-p, #second-p {
     font-size: 0.73rem;
+}
+
+#second-p {
+    margin-top: 15px;
 }
 
 .prep-time {
@@ -76,6 +79,10 @@ ul li, ol li {
     font-size: 0.73rem;
 }
 
+ol li {
+    line-height: 1.5;
+}
+
 ul li::marker {
     color: hsl(14, 45%, 36%);
     font-size: 0.9rem;
@@ -87,6 +94,7 @@ ol li::marker {
 }
 
 .list {
+    padding-left: 0.5rem;
     font-weight: 600;
 }
 
@@ -103,7 +111,6 @@ h2 {
     padding: 15px 0 15px 2%;
     font-family: 'Outfit';
 }
-
 
 .nutrients {
     position: relative;
@@ -135,11 +142,18 @@ hr {
     color: hsl(228, 45%, 44%);
  }
 
+ footer {
+    margin: 10px 0;
+ }
 
 @media (min-width: 319px) and (max-width: 480px) {
     .recipe-card {
         width: 350px;
-        height: 1440px;
+        height: 1495px;
+    }
+
+    .nutrition-values {
+        left: 11.5rem;
     }
 
     footer {

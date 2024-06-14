@@ -12,19 +12,18 @@ body {
 }
 
 .container {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
 }
 
 
 .recipe-card {
     width: 520px;
-    height: 800;
+    height: 1320px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
-    margin: auto;
 }
 
 .img-container {
@@ -107,6 +106,7 @@ h2 {
 
 
 .nutrients {
+    position: relative;
     margin: 15px 0;
 }
 
@@ -135,10 +135,14 @@ hr {
     color: hsl(228, 45%, 44%);
  }
 
- footer {
-   position: absolute;
-   top: 100%;
-   left: 50%;
-   transform: translate(-50%, 700px);
-   margin-bottom: 10px;
-}
+
+@media (min-width: 319px) and (max-width: 480px) {
+    .recipe-card {
+        width: 350px;
+        height: 1440px;
+    }
+
+    footer {
+        margin: 10px 0;
+    }
+} 
